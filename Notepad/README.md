@@ -1,4 +1,4 @@
-# AutomationWithPywinAuto
+# Automation With PywinAuto
 
 
 Automatização de Teste na prática utilizando Python, Pywinauto e Pytest.
