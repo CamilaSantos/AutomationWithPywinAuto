@@ -109,21 +109,3 @@ class Actions:
         saveButton = paramApp.child_window(
             title="Save", auto_id="1", control_type="Button").wrapper_object()
         saveButton.click_input()
-
-
-#==================================================#
-# cls = Actions()  # <- Classe
-
-# """
-#     Com a condição abaixo, informamos a função inicial
-#     e disponibilizamos para as demais funções a variável
-#     global ''paramApp''
-# """
-# if __name__ == "__main__":
-#     cls.startApp( 'C:\\Windows\\System32\\notepad.exe', '.* - Notepad$')
-
-# cls.alterFont("Consolas", "20", "Regular")
-
-# cls.insertText('Teste')# <- Função para incluir o texto no Notepad
-# cls.saveFile()
-

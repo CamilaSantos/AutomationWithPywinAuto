@@ -11,7 +11,7 @@ Configuração para utilizar Python, Pywinauto e Pytest:
 * Instalar Pytest 
 (https://blog.finxter.com/how-to-install-pytest-in-python/#:~:text=Your%20Python%20Skills-,How%20to%20Install%20pytest%20on%20Windows%3F,for%20your%20default%20Python%20installation.)
 
-Eu estou treinando Python, então optei em trabalhar com classes e tornar mais dinâmica a utilização do projeto.
+Estou treinando Python, então optei em trabalhar com classes e tornar mais dinâmica a utilização do projeto.
 
 Para ter uma visão simples de como funciona o Pywinauto, sugiro o vídeo abaixo:
 

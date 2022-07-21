@@ -6,7 +6,6 @@
 """
 import os
 import sys
-# print(sys.path)
 from src.main import Actions
 from pytest import mark
 import pytest
