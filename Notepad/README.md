@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=_-H1GgIhjhA
 
 
 
-## *Executando teste com pytest *
+## Executando teste com pytest 
 
 Através do terminal, no diretório 'test' dentro deste projeto, executar o comando:
 
