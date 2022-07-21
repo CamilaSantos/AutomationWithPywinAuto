@@ -8,3 +8,5 @@ class selectApp(ABC):
         self.w = w
         self.t = t
         
+        
+#No momento obsoleta, mas pode ser que utilize no futuro :)

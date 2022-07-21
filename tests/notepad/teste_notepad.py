@@ -1,5 +1,7 @@
-from main import actions
+import os
+from src.storageCode.main import actions
 from pytest import mark
+
 
 
 class testes:

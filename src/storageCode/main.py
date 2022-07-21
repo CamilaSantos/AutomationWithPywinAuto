@@ -1,4 +1,4 @@
-from storageCode.constructor import selectApp
+#from storageCode.constructor import selectApp
 from pywinauto.application import Application
 import string
 import random
@@ -12,12 +12,11 @@ class actions:
         self.a = a
         self.b = b
         # Variável responsável por dosponibilizar as ações do Application
-        paramApp = Application(backend='uia').start(
-            f'{a}').window(title_re=f'{b}')
-        paramApp.wait('ready', timeout=10)
+        paramApp = Application(backend='uia').start( f'{a}').window(title_re=f'{b}')
+        paramApp.wait('visible', timeout=10)
+        
 
     # Imprimindo no terminal a arvore de estrutora do aplicativo.
-
     def structureApp(self):
         app = paramApp
         app.print_control_identifiers()
@@ -28,8 +27,9 @@ class actions:
         self.text = texto
         textEditor = paramApp.child_window(
             title="Text Editor", auto_id="15", control_type="Edit").wrapper_object()
-        textEditor.type_keys(f'{self.texto}', with_spaces=True)
-        return texto
+        textEditor.type_keys(f'{texto}', with_spaces=True)
+        #return texto
+        
         
         
 
@@ -82,8 +82,7 @@ class actions:
         ran = ''.join(random.choices(string.ascii_letters + string.digits, k=S))
 
         #Acessando menu File e selecionando Save As... para salvar o aqruivo
-        menuFile = paramApp.child_window(
-            title="File", control_type="MenuItem").wrapper_object()
+        menuFile = paramApp.child_window(title="File", control_type="MenuItem").wrapper_object()
         menuFile.click_input()
 
         menuFileSaveAs = paramApp.child_window(
@@ -124,8 +123,10 @@ cls = actions()  # <- Classe
 #     global ''paramApp''
 # """
 if __name__ == "__main__":
-    cls.startApp(string, string)
+    cls.startApp( 'C:\\Windows\\System32\\notepad.exe', '.* - Notepad$')
 
-# cls.alterFont("Verdana", "20", "Regular")
+cls.alterFont("Verdana", "20", "Regular")
 
-# cls.insertText()# <- Função para incluir o texto no Notepad
+cls.insertText('Teste')# <- Função para incluir o texto no Notepad
+cls.saveFile()
+
