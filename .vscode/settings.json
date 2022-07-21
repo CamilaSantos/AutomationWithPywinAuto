@@ -19,5 +19,9 @@
         "titleBar.inactiveForeground": "#e7e7e799",
         "python.envFile": "${workspaceFolder}/.env"
     },
-    "peacock.color": "#832561"
+    "peacock.color": "#832561",
+    // "python.analysis.extraPaths": [
+    //     "./Notepad/src",
+    //     "./Notepad/src/storageCode"
+    // ]
 }

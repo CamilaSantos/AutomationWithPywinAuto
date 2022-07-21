@@ -4,7 +4,7 @@ import string
 import random
 
 
-class actions:
+class Actions:
 
     # inicia o aplicativo
     def startApp(self, a, b):
@@ -30,8 +30,6 @@ class actions:
         textEditor.type_keys(f'{texto}', with_spaces=True)
         #return texto
         
-        
-        
 
     # Alterando Fonte
 
@@ -44,8 +42,7 @@ class actions:
         # menuBar.click_input()
 
         # Abrir menu Format
-        menuFormat = paramApp.child_window(
-            title="Format", control_type="MenuItem").wrapper_object()
+        menuFormat = paramApp.child_window(title="Format", control_type="MenuItem").wrapper_object()
         menuFormat.click_input()
 
         # Selecionando o input para digitar a fonte desejada
@@ -76,7 +73,7 @@ class actions:
      # Salvar arquivo .txt
 
     def saveFile(self):
-
+        
        #Randomizando letras e números para salvar novo documento até 3 caracteres
         S = 3
         ran = ''.join(random.choices(string.ascii_letters + string.digits, k=S))
@@ -115,18 +112,18 @@ class actions:
 
 
 #==================================================#
-cls = actions()  # <- Classe
+# cls = Actions()  # <- Classe
 
 # """
 #     Com a condição abaixo, informamos a função inicial
 #     e disponibilizamos para as demais funções a variável
 #     global ''paramApp''
 # """
-if __name__ == "__main__":
-    cls.startApp( 'C:\\Windows\\System32\\notepad.exe', '.* - Notepad$')
+# if __name__ == "__main__":
+#     cls.startApp( 'C:\\Windows\\System32\\notepad.exe', '.* - Notepad$')
 
-cls.alterFont("Verdana", "20", "Regular")
+# cls.alterFont("Consolas", "20", "Regular")
 
-cls.insertText('Teste')# <- Função para incluir o texto no Notepad
-cls.saveFile()
+# cls.insertText('Teste')# <- Função para incluir o texto no Notepad
+# cls.saveFile()
 
